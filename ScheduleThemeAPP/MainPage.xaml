@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScheduleThemeAPP.MainPage">
+    <Grid>
+        <ScrollView BackgroundColor="White" Orientation="Vertical"  >
+            <Grid>
+                <ScrollView  BackgroundColor="Transparent" Orientation="Horizontal">
+                    <Grid WidthRequest="3000">
+                        <GraphicsView x:Name="graphViewLines"/>
+                        <AbsoluteLayout x:Name="layout">
+                            <!--<Frame CornerRadius="10" BackgroundColor="#666" AbsoluteLayout.LayoutBounds="80,100,300,120">
+                                <VerticalStackLayout>
+                                    <Label  Text="Физъебля" FontSize="18" TextColor="White"/>
+                                    <Label  Text="(Какой-то еблан)" FontSize="12" TextColor="White"/>
+                                    <Label  Text="(Какой-то кабинет)" FontSize="12" TextColor="White"/>
+
+                                </VerticalStackLayout>
+                            </Frame>
+                            <Frame CornerRadius="10" BackgroundColor="#666" AbsoluteLayout.LayoutBounds="80,250,300,120">
+                                <VerticalStackLayout>
+                                    <Label  Text="Матхуй" FontSize="18" TextColor="White"/>
+                                    <Label  Text="(Какой-то еблан)" FontSize="12" TextColor="White"/>
+                                    <Label  Text="(Какой-то кабинет)" FontSize="12" TextColor="White"/>
+
+                                </VerticalStackLayout>
+                            </Frame>
+                            <Frame CornerRadius="10" BackgroundColor="#DAA" AbsoluteLayout.LayoutBounds="80,400,300,120">
+                                <VerticalStackLayout>
+                                    <Label  Text="Английская гей-ебля" FontSize="18" TextColor="White"/>
+                                    <Label  Text="(Какой-то еблан)" FontSize="12" TextColor="White"/>
+                                    <Label  Text="(Какой-то кабинет)" FontSize="12" TextColor="White"/>
+
+                                </VerticalStackLayout>
+                            </Frame>
+                            <Frame CornerRadius="10" BackgroundColor="#666" AbsoluteLayout.LayoutBounds="380,400,300,120">
+                                <VerticalStackLayout>
+                                    <Label  Text="Хуесосология" FontSize="18" TextColor="White"/>
+                                    <Label  Text="(Какой-то еблан)" FontSize="12" TextColor="White"/>
+                                    <Label  Text="(Какой-то кабинет)" FontSize="12" TextColor="White"/>
+
+                                </VerticalStackLayout>
+                            </Frame>
+                            <Frame CornerRadius="10" BackgroundColor="#666" AbsoluteLayout.LayoutBounds="80,530,300,120">
+                                <VerticalStackLayout>
+                                    <Label  Text="Физкультура" FontSize="18" TextColor="White"/>
+                                    <Label  Text="(Какой-то еблан)" FontSize="12" TextColor="White"/>
+                                    <Label  Text="(Какой-то кабинет)" FontSize="12" TextColor="White"/>
+
+                                </VerticalStackLayout>
+                            </Frame>-->
+                     </AbsoluteLayout>
+                 </Grid>
+               </ScrollView>
+                <Grid x:Name="gridBackground" HorizontalOptions="Start" WidthRequest="60" >
+                    <GraphicsView Background="Transparent"  x:Name="graphViewTime" HeightRequest="10000"/>
+                </Grid>
+              
+            </Grid>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

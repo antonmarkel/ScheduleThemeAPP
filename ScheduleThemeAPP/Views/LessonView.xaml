@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScheduleThemeAPP.Views.LessonView"
+             AbsoluteLayout.LayoutBounds="{Binding Bounds}">
+    <Grid>
+        <Frame BackgroundColor="#555"></Frame>
+        <Grid BackgroundColor="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Text="{Binding TimeStart}" VerticalOptions="Start" HorizontalOptions="Start"
+                   TextColor="#222" FontSize="12" Margin="5"/>
+            <Label Text="{Binding TimeFinish}" Grid.Row="1" VerticalOptions="End" HorizontalOptions="Start"
+                   TextColor="#222" FontSize="12" Margin="5"/>
+
+           <Label VerticalOptions="Center"  Margin="10,20,0,0"  Text="{Binding ClassName}" FontSize="26" TextColor="White"  FontFamily="Gagalin"/>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <VerticalStackLayout>
+                    <Label Margin="10,0"  Text="{Binding Room}" FontSize="14" FontAttributes="Bold" TextColor="#CCC"/>
+                    <Label Margin="10,0"  Text="{Binding Teacher}" FontSize="12" FontAttributes="Bold" TextColor="#CCC"/>
+                </VerticalStackLayout>
+
+                <Image IsVisible="{Binding HasNotes}"  Grid.Column="1" WidthRequest="80"  Source="test2.png"/>
+            </Grid>
+                
+        </Grid>
+    </Grid>
+  
+</ContentView>
